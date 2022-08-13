@@ -67,7 +67,9 @@
       <section class="heroe-section-design">
         <div class="heroe-container container">
           <h1 class="heroe-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="heroe-button-design">Замовити послугу</button>
+          <button type="button" class="heroe-button-design" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!--Чим ми займаємося-->
@@ -419,5 +421,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg class="modal-icon" width="11" height="11">
+            <use href="./img/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
